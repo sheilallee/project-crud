@@ -1,0 +1,30 @@
+{
+    "Name":"Nome",
+    "Birth date":"Data de nascimento",
+    "Address":"Endereço",
+    "Email address":"Endereço de e-mail",
+    "Phone Number":"Telefone",
+    "Register date":"Data de cadastro",
+    "New Contact":"Novo contato",
+    "Contacts":"Contatos",
+    
+    "Description": "Descrição",
+    "Name":"Nome",
+    "Search":"Pesquisar",
+    "Password":"Senha",
+    "Remember Me":"Lembrar de mim",
+    "Forgot Your Password?":"Esqueceu sua senha?",
+    "Login":"Entrar",
+    "Register":"Cadastre-se",
+    "Categories":"Categorias",
+    "Category":"Categoria",
+    "Create category":"Criar categoria",
+    "Edit":"Editar",
+    "Delete":"Deletar",
+    "Save":"Salvar",
+    "Yes":"Sim",
+    "Cancel":"Cancelar",
+    "Confirm":"Confirmação",
+    "Do you really want to delete this record?":"Deseja realmente excluir este registro?"
+
+}
