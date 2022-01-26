@@ -9,9 +9,9 @@
                 <div class="card-body">
 
                     @if ($data->id == "")
-                        <form method="POST" action="{{ route('contacts.store') }}">
+                        <form id="main" method="POST" action="{{ route('contacts.store') }}">
                     @else
-                        <form method="POST" action="{{ route('contacts.update',$data) }}">
+                        <form id="main" method="POST" action="{{ route('contacts.update',$data) }}">
                         @method('PUT')
                     @endif
 
@@ -94,7 +94,7 @@
                             <div class="col-md-6">
                                 <input id="phone" type="text" 
                                 class="form-control @error('phone') is-invalid @enderror" 
-                                name="phone" value="{{ old('phone', $data->phone) }}" placeholder="(xx)xxxxx-xxxx"    >
+                                name="phone" placeholder="(00)00000-0000" value="{{ old('phone', $data->phone) }}">
 
                                 @error('phone')
                                     <span class="text-danger">{{ $message }}</span>
@@ -119,10 +119,11 @@
 
                             </div>
                         </div>
+                    </form>
 
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary" form="main">
                                     {{ __('Save') }}
                                 </button>
 
@@ -130,9 +131,20 @@
                                     {{__('New Contact')}}
                                 </a>
 
+                                @if ($data->id != "")
+                                <form name='delete' action="{{route('contacts.destroy',$data)}}"
+                                    method="post"
+                                    style='display: inline-block;'>
+                                    @csrf
+                                    @method("DELETE")
+                                    <button type="button" onclick="confirmDeleteModal(this)" class="btn btn-danger">
+                                        {{ __('Delete') }}
+                                    </button>
+                                </form>
+                                @endif
+
                             </div>
-                        </div>
-                    </form>
+                        </div>    
                 </div>
             </div>
         </div>

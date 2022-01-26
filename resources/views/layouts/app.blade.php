@@ -14,6 +14,9 @@
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}" defer></script>
     <script src="{{ asset('js/main.js') }}"></script>
 
+    <script src="{{asset('js/jquery-3.6.0.min.js')}}"></script>
+    <script src="{{asset('js/jquery.mask.min.js')}} "></script>
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -98,5 +101,8 @@
             @yield('content')
         </main>
     </div>
+
+    @include('layouts.confirm_modal')
+
 </body>
 </html>

@@ -56,9 +56,12 @@
                                         <form action="{{route('contacts.destroy',$item)}}" method="post">
                                             @csrf
                                             @method("DELETE")
-                                            <button type="submit" class="btn btn-danger">
+
+                                            <button type="button" onclick="confirmDeleteModal(this)" 
+                                                class="btn btn-danger">
                                                 {{__('Delete')}}
                                             </button>
+
                                         </form>
                                     </td>
                                 </tr>    

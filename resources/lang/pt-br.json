@@ -7,7 +7,6 @@
     "Register date":"Data de cadastro",
     "New Contact":"Novo contato",
     "Contacts":"Contatos",
-    
     "Description": "Descrição",
     "Name":"Nome",
     "Search":"Pesquisar",
@@ -26,5 +25,4 @@
     "Cancel":"Cancelar",
     "Confirm":"Confirmação",
     "Do you really want to delete this record?":"Deseja realmente excluir este registro?"
-
 }
